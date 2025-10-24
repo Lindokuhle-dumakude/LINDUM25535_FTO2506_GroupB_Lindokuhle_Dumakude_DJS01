@@ -88,3 +88,29 @@ main {
 }
 
 /* ==== Header Styling Ends ==== */
+
+/* === Filter styling starts ====*/
+
+label,
+select,
+option {
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+select {
+  margin-left: 8px;
+  border-radius: 5px;
+  border-color: #a9a9a9;
+  padding: 4px;
+  font-size: 14px;
+  border-color: #dad7d7;
+  box-shadow: 0 2px 8px rgba(50, 50, 93, 0.07);
+}
+
+.updateFilter {
+  margin-left: 12px;
+}
+
+/* === Filter styling ends ====*/
