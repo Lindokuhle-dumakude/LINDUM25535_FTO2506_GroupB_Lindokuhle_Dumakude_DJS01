@@ -114,3 +114,68 @@ select {
 }
 
 /* === Filter styling ends ====*/
+
+/* === Podcast preview styling starts === */
+
+main {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(4, minmax(0, 304px));
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: 400px;
+  background-color: var(--cardLayoutBackground-color);
+  box-shadow: 0 2px 8px rgba(50, 50, 93, 0.07);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.podcastCover {
+  position: relative;
+  background-color: var(--podcastCoverBackground-color);
+  width: 100%;
+  max-width: 260px;
+  height: 180px;
+  border-radius: 8px;
+}
+.podcastCoverText {
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+}
+.cardDetails {
+  position: absolute;
+  bottom: 5%;
+}
+.podcastTitleCard {
+  padding-bottom: 12px;
+}
+.watchIcon {
+  width: 12px;
+}
+.seasonNumber {
+  font-size: 16px;
+  color: #726e6e;
+}
+.podcastContent {
+  margin-top: 16px;
+}
+.podcastContentType {
+  background-color: var(--highlightColor);
+  padding: 6px;
+  border-radius: 5px;
+}
+.dateUpdated {
+  color: var(--lastUpdatedDateText-Color);
+  font-size: 14px;
+  margin-top: 24px;
+}
+
+/* === Podcast preview styling ends === */
