@@ -144,11 +144,11 @@ main {
 }
 .podcastCoverText {
   position: absolute;
-  left: 20%;
+  left: 5%;
   top: 40%;
   color: white;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
 }
 .cardDetails {
   position: absolute;
@@ -169,7 +169,7 @@ main {
 }
 .podcastContentType {
   background-color: var(--highlightColor);
-  padding: 6px;
+  padding: 3px;
   border-radius: 5px;
 }
 .dateUpdated {
@@ -191,6 +191,9 @@ main {
     gap: 16px;
   }
 }
+.podcastCoverText {
+  left: 15%;
+}
 
 /* === mobile smartphone responsive === */
 
@@ -208,7 +211,7 @@ main {
   }
   .podcastTitle {
     padding-left: 8px;
-    font-size: 28px;
+    font-size: 24px;
   }
   .podcastAppLogo {
     width: 32px;
@@ -243,7 +246,7 @@ main {
   }
 
   .updateFilter {
-    margin-left: 2px;
+    margin-left: 0px;
   }
 
   /* === Filter styling ends ====*/
@@ -263,13 +266,16 @@ main {
   }
   .podcastCover {
     width: 240px;
-    height: 140px;
+    height: 120px;
+  }
+  .podcastCoverText {
+    left: 12%;
   }
   .cardDetails {
     bottom: 5%;
   }
   .podcastTitleCard {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   /* === Podcast preview styling ends === */
