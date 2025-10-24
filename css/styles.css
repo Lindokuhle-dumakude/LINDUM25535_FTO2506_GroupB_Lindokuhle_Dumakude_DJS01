@@ -39,3 +39,52 @@ main {
 .filterSection {
   padding-left: 20px;
 }
+
+/* ==== Header Styling Starts ==== */
+
+.header {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: var(--headerLayoutBackground-color);
+  box-shadow: 0 2px 8px rgba(50, 50, 93, 0.07);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.podcastAppLogo {
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.podcastTitle {
+  padding-left: 12px;
+}
+
+.podcastLogoAndTitle {
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-left: 20px;
+}
+
+.podcastSearchAndProfile {
+  margin-left: auto;
+  padding-right: 20px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.searchIcon {
+  padding-right: 24px;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+.profileIcon {
+  cursor: pointer;
+}
+
+/* ==== Header Styling Ends ==== */
