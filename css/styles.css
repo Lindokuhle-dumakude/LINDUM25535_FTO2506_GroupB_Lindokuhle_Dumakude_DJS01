@@ -179,3 +179,98 @@ main {
 }
 
 /* === Podcast preview styling ends === */
+
+/* === Responsive design === */
+
+/* Tablet responsive */
+
+@media screen and (max-width: 1023px) {
+  main {
+    grid-template-columns: repeat(2, minmax(0, 360px));
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+/* === mobile smartphone responsive === */
+
+@media screen and (max-width: 576px) and (min-width: 376px) {
+  main {
+    margin-left: 24px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* ==== Header Styling starts ==== */
+
+  .podcastLogoAndTitle {
+    padding-left: 12px;
+  }
+  .podcastTitle {
+    padding-left: 8px;
+    font-size: 28px;
+  }
+  .podcastAppLogo {
+    width: 32px;
+    height: 32px;
+  }
+  .searchIcon {
+    object-fit: cover;
+    width: 25px;
+    padding-right: 8px;
+    padding-top: 12px;
+  }
+  .profileIcon {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* ==== Header Styling Ends ==== */
+
+  /* === Filter styling starts ====*/
+
+  label,
+  select,
+  option {
+    font-weight: 700;
+    margin-top: 2px;
+  }
+
+  select {
+    margin-left: 2px;
+    padding: 2px;
+    font-size: 12px;
+  }
+
+  .updateFilter {
+    margin-left: 2px;
+  }
+
+  /* === Filter styling ends ====*/
+
+  /* === Podcast preview styling starts === */
+
+  main {
+    grid-template-columns: minmax(0, 23.75rem);
+  }
+
+  .card {
+    position: relative;
+    width: 280px;
+    height: 320px;
+    margin-left: 0px;
+    margin-top: 16px;
+  }
+  .podcastCover {
+    width: 240px;
+    height: 140px;
+  }
+  .cardDetails {
+    bottom: 5%;
+  }
+  .podcastTitleCard {
+    font-size: 20px;
+  }
+
+  /* === Podcast preview styling ends === */
+}
