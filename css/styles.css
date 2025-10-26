@@ -133,6 +133,7 @@ main {
   border-radius: 8px;
   padding: 20px;
   margin-top: 20px;
+  cursor: pointer;
 }
 .podcastCover {
   position: relative;
@@ -179,6 +180,76 @@ main {
 }
 
 /* === Podcast preview styling ends === */
+
+/* === Modal styling starts === */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 700px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-body {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.modal-cover {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.modal-genres {
+  margin: 8px 0;
+}
+
+.modal-genres .tag {
+  display: inline-block;
+  background: #f1f1f1;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 12px;
+  margin-right: 6px;
+}
+
+.seasonItem {
+  border: 1px solid #e7e7e7;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.close {
+  font-size: 32px;
+  color: red;
+  cursor: pointer;
+}
+
+/* === Modal styling ends === */
 
 /* === Responsive design === */
 
@@ -279,4 +350,10 @@ main {
   }
 
   /* === Podcast preview styling ends === */
+
+  /* === Modal Styling === */
+  .modal-body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
